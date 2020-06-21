@@ -3,7 +3,7 @@ title: Example note
 tags:
   - example
 emoji: 👋
-link: https://zander.wtf
+link: https://github.com/janeluck
 ---
 
 This is an example note, see below for some code.
