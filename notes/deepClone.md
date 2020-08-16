@@ -11,6 +11,8 @@ link: https://janeluck.github.io/codeNote/deepClone
  + 递归导致的爆栈，使用循环解决
  + 循环引用，保留引用关系解决
 
+> 该方法只针对[object Object]，不考虑数组和es6引进的set、map等等 
+
 ```js
 /*
 * 对象的深拷贝
