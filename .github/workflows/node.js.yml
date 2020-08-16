@@ -23,10 +23,17 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/checkout@v2
+    - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: git  config   user.email "janeluck158@gmail.com"
+    - run: git  config   user.name "janeluck"
     - run: npm install yarn -g
     - run: yarn
     - run: yarn deploy
