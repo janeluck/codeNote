@@ -27,9 +27,9 @@ jobs:
     - run: git  config   user.email "janeluck158@gmail.com"
     - run: git  config   user.name "janeluck"
     - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - run: yarn deploy
 
 
