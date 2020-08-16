@@ -27,8 +27,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: git  config   user.email "janeluck158@gmail.com"
-    - run: git  config   user.name "janeluck"
     - run: npm install yarn -g
     - run: yarn
     - run: yarn deploy
