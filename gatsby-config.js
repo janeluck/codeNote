@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: 'codeNote',
   siteMetadata: {
-    title: 'gatsby-starter-code-notes',
-    description: `A starter for gatsby-theme-code-notes`,
-    author: 'Zander',
+    title: 'code notes',
+    description: `jane-code-notes`,
+    author: 'jane',
   },
   plugins: [
     {
